@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# Model weights (large files)
+*.pth
+*.pt
