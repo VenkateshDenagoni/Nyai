@@ -21,4 +21,4 @@ NyAI is an AI-powered legal assistance platform focused on providing accurate le
 
 ## Contributors
 
-[Your Name]
+D. Venkatesh
