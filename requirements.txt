@@ -4,26 +4,22 @@ flask-cors==5.0.1
 werkzeug==3.1.3
 python-dotenv==1.1.0
 gunicorn==21.2.0
-pyyaml==6.0.2
+pydantic==2.11.1
 tenacity==9.0.0
+requests==2.32.3
 
 # LLM integration
-google-generativeai==0.7.0
-
-# Translation
-sacremoses==0.1.1
-
-# Utilities
-redis==5.0.1
-requests==2.32.3
-urllib3==2.3.0
+google-generativeai==0.8.4
 
 # Monitoring and logging
-prometheus-flask-exporter==0.22.4
+prometheus-client==0.19.0
+python-json-logger==2.0.7
 
 # Security
-pyjwt==2.8.0
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==4.1.2
 
 # Testing
-pytest==8.0.0
+pytest==8.0.2
 pytest-cov==4.1.0

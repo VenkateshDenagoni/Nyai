@@ -59,35 +59,6 @@ def generate():
         "processing_time_ms": duration_ms
     })
 
-@ai_routes.route("/translate", methods=["POST"])
-@rate_limit()
-@auth_required
-def translate():
-    """
-    Translate text between languages.
-    
-    Accepts a JSON payload with:
-    - input_sentences: List of sentences to translate
-    - source_language: (Optional) Source language
-    - target_language: Target language
-    
-    Returns:
-    - JSON with translated text
-    """
-    # Get request data
-    data = request.json
-    if not data:
-        raise ValidationError("Missing request body")
-        
-    if "input_sentences" not in data:
-        raise ValidationError("Missing 'input_sentences' field")
-    
-    # TODO: Replace with your translation service implementation
-    from src.services.translation_service import translate_sentences
-    translation_result = translate_sentences(data["input_sentences"])
-    
-    return jsonify(translation_result)
-
 @ai_routes.route("/clear-cache", methods=["POST"])
 @auth_required
 def cache_clear():

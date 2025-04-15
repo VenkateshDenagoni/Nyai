@@ -1,1 +1,45 @@
- 
+# Git files
+.git
+.gitignore
+.github
+
+# Environment files
+.env
+.env.*
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Development and testing
+tests/
+notebooks/
+scripts/
+docs/
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# IDE files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Docker files
+.dockerignore
+docker-compose.yml
+
+# Other
+README.md
+LICENSE
+.pytest_cache/
+htmlcov/
+.coverage 
